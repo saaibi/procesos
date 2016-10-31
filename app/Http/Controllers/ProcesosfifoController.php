@@ -26,7 +26,7 @@ class ProcesosfifoController extends AppBaseController
 	 */
 	public function index()
 	{
-		$procesos = $this->procesosRepository->paginate(30);
+		$procesos = $this->procesosRepository->paginate(4);
 
 		return view('procesosfifo.index')
 			->with('procesos', $procesos);	

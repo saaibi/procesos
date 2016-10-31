@@ -26,7 +26,7 @@ class ProcesosController extends AppBaseController
 	 */
 	public function index()
 	{
-	$procesos = $this->procesosRepository->paginate(30);
+	$procesos = $this->procesosRepository->paginate(3);
 		
    	return view('procesos.index')->with('procesos', $procesos->sortBy('numero'));
 	}

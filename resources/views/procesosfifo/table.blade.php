@@ -20,4 +20,5 @@
         
     @endforeach
     </tbody>
+    {!! $procesos->render() !!}
 </table>
